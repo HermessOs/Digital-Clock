@@ -23,6 +23,10 @@ The hours stage uses two separate counter pairs, one for each display mode, sinc
 
 The tens and units digits of the hours display are each routed through a 2-to-1 multiplexer, selecting between the 12-hour and 24-hour counter outputs. Both multiplexers share a single select line, driven by a T flip-flop that toggles on each button press — switching the display format instantly without disrupting timekeeping.
 
+### Output Display
+
+Each counter's BCD output is fed into a hex (7-segment) display decoder, converting the count into a human-readable digit on the corresponding display.
+
 ### Manual Time Setting
 
 Dedicated push buttons allow the hours and minutes to be set independently.
