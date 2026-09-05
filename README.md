@@ -27,3 +27,11 @@ Each counter's BCD output is fed into a hex (7-segment) display decoder, convert
 
 ### Manual Time Setting
 Dedicated push buttons allow the hours and minutes to be set independently.
+
+## Demo
+https://github.com/user-attachments/assets/1010ad7b-b3b0-4abb-9eff-3d6e70faf855
+
+
+
+
+
