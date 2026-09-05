@@ -3,7 +3,6 @@ A digital clock circuit i designed and simulated in Logisim Evolution. The desig
 
 ## Circuit Overview
 
-![Full Clock](Full%20Clock.png)
 
 ### Seconds & Minutes
 The seconds and minutes displays are each driven by two (T Flip Flop) cascaded BCD counters:
@@ -20,7 +19,6 @@ The hours stage uses two separate counter pairs, one for each display mode, sinc
 ### Mode Switching
 The tens and units digits of the hours display are each routed through a 2-to-1 multiplexer, selecting between the 12-hour and 24-hour counter outputs. Both multiplexers share a single select line, driven by a T flip-flop that toggles on each button press — switching the display format instantly without disrupting timekeeping.
 
-![Zoomed Hour Controller](Zoomed%20Hour%20Controller.png)
 
 ### Output Display
 Each counter's BCD output is fed into a hex (7-segment) display decoder, converting the count into a human-readable digit on the corresponding display.
